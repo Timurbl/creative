@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('.menu ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<title>Creative</title>
+</head>
+
+<body>
+<div class="karkas">
+	<div class="header-main">
+    	<div class="header-top">
+        	<div class="header">
+            	<a href="#" class="logo">Creative<sup>+</sup></a>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Toutorials</a></li>
+                        <li><a href="#">design</a></li>
+                        <li class="active"><a href="#">web design</a></li>
+                        <li><a href="#">other</a></li>
+                        <li><a href="#">cotnact</a></li>
+                    </ul>
+                    <a href="#" id="pull">Меню</a>
+                </div>    
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-main">
+    	<div class="content">
+        	
+            <div class="post-main">
+            	<div class="post-img">
+                	<img src="images/post-img1.jpg" alt="" />
+                    <div class="post-img-social">
+                    	<a href="#"><img src="images/post-facebook.png" alt="" /></a>
+                        <a href="#"><img src="images/post-twitter.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="post-content">
+                	<div class="post-str"></div>
+                    <div class="post-head">
+                    	<h1><a href="#">Roundup: 20 web designs with large backgrounds</a></h1>
+                        <p>19th April 2012</p>
+                        <h2>Sub heading to go here</h2>
+                    </div>
+                    <div class="post">
+                    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel. Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus. </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-main">
+            	<div class="post-img">
+                	<img src="images/post-img2.jpg" alt="" />
+                    <div class="post-img-social">
+                    	<a href="#"><img src="images/post-facebook.png" alt="" /></a>
+                        <a href="#"><img src="images/post-twitter.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="post-content">
+                	<div class="post-str"></div>
+                    <div class="post-head">
+                    	<h1><a href="#">Roundup: 20 web designs with large backgrounds</a></h1>
+                        <p>19th April 2012</p>
+                        <h2>Sub heading to go here</h2>
+                    </div>
+                    <div class="post">
+                    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel. Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus. </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-main">
+            	<div class="post-img">
+                	<img src="images/post-img3.jpg" alt="" />
+                    <div class="post-img-social">
+                    	<a href="#"><img src="images/post-facebook.png" alt="" /></a>
+                        <a href="#"><img src="images/post-twitter.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="post-content">
+                	<div class="post-str"></div>
+                    <div class="post-head">
+                    	<h1><a href="#">Roundup: 20 web designs with large backgrounds</a></h1>
+                        <p>19th April 2012</p>
+                        <h2>Sub heading to go here</h2>
+                    </div>
+                    <div class="post">
+                    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel. Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus. </p>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="pager">
+            	<li><a href="#" class="page-now">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+            
+        </div>
+        <div class="sidebar-main">
+        	<div class="sidebar">
+            	<div class="side-vidget">
+                	<h2>Blog Categories</h2>
+                    <ul>
+                    	<li><a href="#">Blog Category 1 (5)</a></li>
+                        <li><a href="#">Blog Category 2 (4)</a></li>
+                        <li><a href="#">Blog Category 3 (7)</a></li>
+                        <li><a href="#">Blog Category 4 (5)</a></li>
+                        <li><a href="#">Blog Category 5 (3)</a></li>
+                        <li><a href="#">Blog Category 6 (9)</a></li>
+                    </ul>
+                </div>
+                <div class="side-vidget">
+                	<h2>Archives</h2>
+                    <ul>
+                    	<li><a href="#">January 2012 (23)</a></li>
+                        <li><a href="#">December 2011 (34)</a></li>
+                        <li><a href="#">November 2011 (21)</a></li>
+                        <li><a href="#">October 2011 (11)</a></li>
+                        <li><a href="#">September 2011 (44)</a></li>
+                        <li><a href="#">August 2011 (4)</a></li>                   
+                    </ul>
+                </div>
+                <div class="side-vidget">
+                	<h2>Recent Posts</h2>
+                    <div class="recent-post">
+                    	<p><a href="#">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum vitae</a> <span>14th Febuary 2012</span></p>
+                        <p><a href="#">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum vitae</a> <span>14th Febuary 2012</span></p>
+                        <p><a href="#">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum vitae</a> <span>14th Febuary 2012</span></p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="side-banner">
+            	<a href="#"><img src="images/side-banner.jpg" alt="" /></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-main">
+    	<div class="footer">
+        	<div class="footer-right">
+            	<a href="#"><img src="images/post-facebook.png" alt="" /></a>
+                <a href="#"><img src="images/post-twitter.png" alt="" /></a>
+                <a href="#"><img src="images/rss.png" alt="" /></a>
+            </div>
+            <div class="footer-left">
+            	<p>Quisque turpis lorem, vehicula eget rhoncus vel, ultricies ac mauris. Morbi lectus velit, tincidunt congue pharetra eu, varius nec libero. Vivamus justo risus, dignissim ac vestibulum eget, egestas rutrum magna. Etiam malesuada nisi et nisl volutpat tristique. </p>
+                <p class="copy">Copyright 2012 Footer here</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
