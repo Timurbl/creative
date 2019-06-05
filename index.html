@@ -1,184 +1,237 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>
-		$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('.menu ul');
-				menuHeight	= menu.height();
-
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
-	</script>
-
-<link rel="stylesheet" type="text/css" href="style.css" />
-
-<title>Creative</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Creative</title>
 </head>
-
 <body>
-<div class="karkas">
-	<div class="header-main">
-    	<div class="header-top">
-        	<div class="header">
-            	<a href="#" class="logo">Creative<sup>+</sup></a>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Articles</a></li>
-                        <li><a href="#">Toutorials</a></li>
-                        <li><a href="#">design</a></li>
-                        <li class="active"><a href="#">web design</a></li>
-                        <li><a href="#">other</a></li>
-                        <li><a href="#">cotnact</a></li>
-                    </ul>
-                    <a href="#" id="pull">Меню</a>
-                </div>    
+<header class="main_header">
+    <nav class="main_nav">
+        <div class="wrapper">
+        <div class="logo">
+            <a href="#" class="logo__name">Creative<sup class="logo__decoration">+</sup></a>
+        </div>
+        <ul class="main_nav__menu menu">
+            <li>
+                <a class="menu__item" href="#">Articles</a>
+            </li>
+            <li>
+                <a class="menu__item" href="#">Tutorials</a>
+            </li>
+            <li>
+                <a class="menu__item" href="#">Design</a>
+            </li>
+            <li>
+                <a class="menu__item" href="#">Web design</a>
+            </li>
+            <li>
+                <a class="menu__item" href="#">Other</a>
+            </li>
+            <li>
+                <a class="menu__item" href="#">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <main class="main">
+        <section class="news">
+            <section class="news__post">
+                <div class="post__img">
+                    <img src="images/post-img1.jpg">
+                    <img src="images/post-twitter.png">
+                    <img src="images/post-facebook.png">
+                </div>
+                <div class="post__description">
+                    <h2>
+                        <a href="#">Roundup: 20 web designs with
+                            large backgrounds</a>
+                    </h2>
+                    <span class="post__date">
+                        19th April 2012
+                    </span>
+                    <span class="post__help">
+                        Sub heading to go here
+                    </span>
+                    <p class="post__about">
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
+                        Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus.
+                    </p>
+                </div>
+            </section>
+            <section class="news__post">
+                <div class="post__img">
+                    <img src="images/post-img2.jpg">
+                    <img src="images/post-twitter.png">
+                    <img src="images/post-facebook.png">
+                </div>
+                <div class="post__description">
+                    <h2>
+                        <a href="#">Roundup: 20 web designs with
+                            large backgrounds</a>
+                    </h2>
+                    <span class="post__date">
+                        19th April 2012
+                    </span>
+                    <span class="post__help">
+                        Sub heading to go here
+                    </span>
+                    <p class="post__about">
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
+                        Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus.
+                    </p>
+                </div>
+            </section>
+            <section class="news__post">
+                <div class="post__img">
+                    <img src="images/post-img3.jpg">
+                    <img src="images/post-twitter.png">
+                    <img src="images/post-facebook.png">
+                </div>
+                <div class="post__description">
+                    <h2>
+                        <a href="#">Roundup: 20 web designs with
+                            large backgrounds</a>
+                    </h2>
+                    <span class="post__date">
+                        19th April 2012
+                    </span>
+                    <span class="post__help">
+                        Sub heading to go here
+                    </span>
+                    <p class="post__about">
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
+                        Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus.
+                    </p>
+                </div>
+            </section>
+
+            <div class="pager">
+                <ul class="pager__list">
+                    <li class="pager__item pager--active">1</li>
+                    <li class="pager__item"><a href="#">2</a></li>
+                    <li class="pager__item"><a href="#">2</a></li>
+                    <li class="pager__item"><a href="#">2</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="others">
+            <section class="sidebar">
+                <form method="get">
+                    <fieldset>
+                        <legend>Blog Categories</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="blog-category-1" id="blog-category-1">
+                                <label for="blog-category-1">Blog Category 1 (5)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="blog-category-2" id="blog-category-2">
+                                <label for="blog-category-2">Blog Category 2 (3)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="blog-category-1" id="blog-category-3" checked>
+                                <label for="blog-category-3">Blog Category 3 (8)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="blog-category-1" id="blog-category-4">
+                                <label for="blog-category-4">Blog Category 4 (12)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="blog-category-1" id="blog-category-5">
+                                <label for="blog-category-5">Blog Category 5 (7)</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Archives</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="january" id="january">
+                                <label for="january">January 2012 (23)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="december" id="december">
+                                <label for="december">December 2011 (34)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="november" id="november" checked>
+                                <label for="november">November 2011 (21)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="october" id="october">
+                                <label for="october">October 2011 (11)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="september" id="september">
+                                <label for="september">September 2011 (44)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="august" id="august">
+                                <label for="august">August 2011 (4)</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="recent_posts">
+                <ul class="posts__list">
+                    <li class="posts__item">
+                        <p class="post__item__about">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum</p>
+                        <span class="post__item__date">14th February 2012</span>
+                    </li>
+                    <li class="posts__item">
+                        <p class="post__item__about">Fusce augue arcu, volutpat eu facilisis suscipit, venenatis vehicula diam. </p>
+                        <span class="post__item__date">12th February 2012</span>
+                    </li>
+                    <li class="posts__item">
+                        <p class="post__item__about">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum</p>
+                        <span class="post__item__date">14th February 2012</span>
+                    </li>
+                </ul>
+            </section>
+            <div class="advertising">
+                <img src="images/side-banner.jpg">
             </div>
         </div>
-    </div>
-    
-    <div class="content-main">
-    	<div class="content">
-        	
-            <div class="post-main">
-            	<div class="post-img">
-                	<img src="images/post-img1.jpg" alt="" />
-                    <div class="post-img-social">
-                    	<a href="#"><img src="images/post-facebook.png" alt="" /></a>
-                        <a href="#"><img src="images/post-twitter.png" alt="" /></a>
-                    </div>
-                </div>
-                <div class="post-content">
-                	<div class="post-str"></div>
-                    <div class="post-head">
-                    	<h1><a href="#">Roundup: 20 web designs with large backgrounds</a></h1>
-                        <p>19th April 2012</p>
-                        <h2>Sub heading to go here</h2>
-                    </div>
-                    <div class="post">
-                    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel. Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus. </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="post-main">
-            	<div class="post-img">
-                	<img src="images/post-img2.jpg" alt="" />
-                    <div class="post-img-social">
-                    	<a href="#"><img src="images/post-facebook.png" alt="" /></a>
-                        <a href="#"><img src="images/post-twitter.png" alt="" /></a>
-                    </div>
-                </div>
-                <div class="post-content">
-                	<div class="post-str"></div>
-                    <div class="post-head">
-                    	<h1><a href="#">Roundup: 20 web designs with large backgrounds</a></h1>
-                        <p>19th April 2012</p>
-                        <h2>Sub heading to go here</h2>
-                    </div>
-                    <div class="post">
-                    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel. Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus. </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="post-main">
-            	<div class="post-img">
-                	<img src="images/post-img3.jpg" alt="" />
-                    <div class="post-img-social">
-                    	<a href="#"><img src="images/post-facebook.png" alt="" /></a>
-                        <a href="#"><img src="images/post-twitter.png" alt="" /></a>
-                    </div>
-                </div>
-                <div class="post-content">
-                	<div class="post-str"></div>
-                    <div class="post-head">
-                    	<h1><a href="#">Roundup: 20 web designs with large backgrounds</a></h1>
-                        <p>19th April 2012</p>
-                        <h2>Sub heading to go here</h2>
-                    </div>
-                    <div class="post">
-                    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel. Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus. </p>
-                    </div>
-                </div>
-            </div>
-            
-            <ul class="pager">
-            	<li><a href="#" class="page-now">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
+
+    </main>
+    <footer class="main_footer">
+        <section class="main_footer__about">
+            <p>Quisque turpis lorem, vehicula eget rhoncus vel, ultricies ac mauris.
+                Morbi lectus velit, tincidunt congue pharetra eu, varius nec libero.
+                Vivamus justo risus, dignissim ac vestibulum eget, egestas rutrum magna.
+                Etiam malesuada nisi et nisl volutpat tristique.</p>
+            <p class="footer__copy">
+                Copyright 2012 Footer here
+            </p>
+        </section>
+        <div class="socials">
+            <ul class="socials__list">
+                <li>
+                    <a href="#">
+                        <img src="images/post-facebook.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/post-twitter.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/rss.png">
+                    </a>
+                </li>
             </ul>
-            
         </div>
-        <div class="sidebar-main">
-        	<div class="sidebar">
-            	<div class="side-vidget">
-                	<h2>Blog Categories</h2>
-                    <ul>
-                    	<li><a href="#">Blog Category 1 (5)</a></li>
-                        <li><a href="#">Blog Category 2 (4)</a></li>
-                        <li><a href="#">Blog Category 3 (7)</a></li>
-                        <li><a href="#">Blog Category 4 (5)</a></li>
-                        <li><a href="#">Blog Category 5 (3)</a></li>
-                        <li><a href="#">Blog Category 6 (9)</a></li>
-                    </ul>
-                </div>
-                <div class="side-vidget">
-                	<h2>Archives</h2>
-                    <ul>
-                    	<li><a href="#">January 2012 (23)</a></li>
-                        <li><a href="#">December 2011 (34)</a></li>
-                        <li><a href="#">November 2011 (21)</a></li>
-                        <li><a href="#">October 2011 (11)</a></li>
-                        <li><a href="#">September 2011 (44)</a></li>
-                        <li><a href="#">August 2011 (4)</a></li>                   
-                    </ul>
-                </div>
-                <div class="side-vidget">
-                	<h2>Recent Posts</h2>
-                    <div class="recent-post">
-                    	<p><a href="#">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum vitae</a> <span>14th Febuary 2012</span></p>
-                        <p><a href="#">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum vitae</a> <span>14th Febuary 2012</span></p>
-                        <p><a href="#">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum vitae</a> <span>14th Febuary 2012</span></p>
-                    </div>
-                </div>    
-            </div>
-            
-            <div class="side-banner">
-            	<a href="#"><img src="images/side-banner.jpg" alt="" /></a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="footer-main">
-    	<div class="footer">
-        	<div class="footer-right">
-            	<a href="#"><img src="images/post-facebook.png" alt="" /></a>
-                <a href="#"><img src="images/post-twitter.png" alt="" /></a>
-                <a href="#"><img src="images/rss.png" alt="" /></a>
-            </div>
-            <div class="footer-left">
-            	<p>Quisque turpis lorem, vehicula eget rhoncus vel, ultricies ac mauris. Morbi lectus velit, tincidunt congue pharetra eu, varius nec libero. Vivamus justo risus, dignissim ac vestibulum eget, egestas rutrum magna. Etiam malesuada nisi et nisl volutpat tristique. </p>
-                <p class="copy">Copyright 2012 Footer here</p>
-            </div>
-        </div>
-    </div>
-    
+    </footer>
 </div>
 </body>
 </html>
