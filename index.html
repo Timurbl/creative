@@ -39,14 +39,17 @@
 <div class="container">
     <main class="main">
         <section class="news">
-            <section class="news__post">
+            <section class="news__post post">
                 <div class="post__img">
                     <img src="images/post-img1.jpg">
-                    <img src="images/post-twitter.png">
-                    <img src="images/post-facebook.png">
+                    <div class="post__share">
+                        <a href="#"><img src="images/post-twitter.png"></a>
+                        <a href="#"><img src="images/post-facebook.png"></a>
+                    </div>
                 </div>
                 <div class="post__description">
-                    <h2>
+                    <div class="triangle"><svg></svg></div>
+                    <h2 class="post__header">
                         <a href="#">Roundup: 20 web designs with
                             large backgrounds</a>
                     </h2>
@@ -200,7 +203,6 @@
                 <img src="images/side-banner.jpg">
             </div>
         </div>
-
     </main>
     <footer class="main_footer">
         <section class="main_footer__about">
