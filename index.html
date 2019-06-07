@@ -48,17 +48,23 @@
                     </div>
                 </div>
                 <div class="post__description">
-                    <div class="triangle"><svg></svg></div>
+                    <div class="triangle"><svg>
+                        <polygon points="0,18 18,0 36,18 " fill="white"></polygon>
+                        <line x1="0" y1="18" x2="18" y2="0" stroke="#dcdcdc" stroke-width="1" />
+                        <line x1="36" y1="18" x2="18" y2="0" stroke="#dcdcdc" stroke-width="1" />
+                    </svg></div>
                     <h2 class="post__header">
-                        <a href="#">Roundup: 20 web designs with
-                            large backgrounds</a>
+                        <a href="#" class="post__heading">
+                            Roundup: 20 web designs with
+                            large backgrounds
+                        </a>
                     </h2>
                     <span class="post__date">
                         19th April 2012
                     </span>
-                    <span class="post__help">
+                    <p class="post__help">
                         Sub heading to go here
-                    </span>
+                    </p>
                     <p class="post__about">
                         Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                         Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
@@ -66,23 +72,32 @@
                     </p>
                 </div>
             </section>
-            <section class="news__post">
+            <section class="news__post post">
                 <div class="post__img">
                     <img src="images/post-img2.jpg">
-                    <img src="images/post-twitter.png">
-                    <img src="images/post-facebook.png">
+                    <div class="post__share">
+                        <a href="#"><img src="images/post-twitter.png"></a>
+                        <a href="#"><img src="images/post-facebook.png"></a>
+                    </div>
                 </div>
                 <div class="post__description">
-                    <h2>
-                        <a href="#">Roundup: 20 web designs with
-                            large backgrounds</a>
+                    <div class="triangle"><svg>
+                        <polygon points="0,18 18,0 36,18 " fill="white"></polygon>
+                        <line x1="0" y1="18" x2="18" y2="0" stroke="#dcdcdc" stroke-width="1" />
+                        <line x1="36" y1="18" x2="18" y2="0" stroke="#dcdcdc" stroke-width="1" />
+                    </svg></div>
+                    <h2 class="post__header">
+                        <a href="#" class="post__heading">
+                            Roundup: 20 web designs with
+                            large backgrounds
+                        </a>
                     </h2>
                     <span class="post__date">
                         19th April 2012
                     </span>
-                    <span class="post__help">
+                    <p class="post__help">
                         Sub heading to go here
-                    </span>
+                    </p>
                     <p class="post__about">
                         Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                         Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
@@ -90,23 +105,32 @@
                     </p>
                 </div>
             </section>
-            <section class="news__post">
+            <section class="news__post post">
                 <div class="post__img">
                     <img src="images/post-img3.jpg">
-                    <img src="images/post-twitter.png">
-                    <img src="images/post-facebook.png">
+                    <div class="post__share">
+                        <a href="#"><img src="images/post-twitter.png"></a>
+                        <a href="#"><img src="images/post-facebook.png"></a>
+                    </div>
                 </div>
                 <div class="post__description">
-                    <h2>
-                        <a href="#">Roundup: 20 web designs with
-                            large backgrounds</a>
+                    <div class="triangle"><svg>
+                        <polygon points="0,18 18,0 36,18 " fill="white"></polygon>
+                        <line x1="0" y1="18" x2="18" y2="0" stroke="#dcdcdc" stroke-width="1" />
+                        <line x1="36" y1="18" x2="18" y2="0" stroke="#dcdcdc" stroke-width="1" />
+                    </svg></div>
+                    <h2 class="post__header">
+                        <a href="#" class="post__heading">
+                            Roundup: 20 web designs with
+                            large backgrounds
+                        </a>
                     </h2>
                     <span class="post__date">
                         19th April 2012
                     </span>
-                    <span class="post__help">
+                    <p class="post__help">
                         Sub heading to go here
-                    </span>
+                    </p>
                     <p class="post__about">
                         Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                         Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel.
@@ -114,13 +138,12 @@
                     </p>
                 </div>
             </section>
-
             <div class="pager">
                 <ul class="pager__list">
-                    <li class="pager__item pager--active">1</li>
-                    <li class="pager__item"><a href="#">2</a></li>
-                    <li class="pager__item"><a href="#">2</a></li>
-                    <li class="pager__item"><a href="#">2</a></li>
+                    <li class="pager__item pager--active"><a class="pager__link" href="#">1</a></li>
+                    <li class="pager__item"><a class="pager__link" href="#">2</a></li>
+                    <li class="pager__item"><a class="pager__link" href="#">3</a></li>
+                    <li class="pager__item"><a class="pager__link" href="#">4</a></li>
                 </ul>
             </div>
         </section>
@@ -204,36 +227,38 @@
             </div>
         </div>
     </main>
-    <footer class="main_footer">
-        <section class="main_footer__about">
-            <p>Quisque turpis lorem, vehicula eget rhoncus vel, ultricies ac mauris.
-                Morbi lectus velit, tincidunt congue pharetra eu, varius nec libero.
-                Vivamus justo risus, dignissim ac vestibulum eget, egestas rutrum magna.
-                Etiam malesuada nisi et nisl volutpat tristique.</p>
-            <p class="footer__copy">
-                Copyright 2012 Footer here
-            </p>
-        </section>
-        <div class="socials">
-            <ul class="socials__list">
-                <li>
-                    <a href="#">
-                        <img src="images/post-facebook.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/post-twitter.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/rss.png">
-                    </a>
-                </li>
-            </ul>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <section class="footer__about">
+                <p class="footer__desc">Quisque turpis lorem, vehicula eget rhoncus vel, ultricies ac mauris.
+                    Morbi lectus velit, tincidunt congue pharetra eu, varius nec libero.
+                    Vivamus justo risus, dignissim ac vestibulum eget, egestas rutrum magna.
+                    Etiam malesuada nisi et nisl volutpat tristique.</p>
+                <p class="footer__copy">
+                    Copyright 2012 Footer here
+                </p>
+            </section>
+            <div class="socials">
+                <ul class="socials__list">
+                    <li>
+                        <a href="#">
+                            <img src="images/post-facebook.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/post-twitter.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/rss.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
-</div>
 </body>
 </html>
