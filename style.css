@@ -140,7 +140,7 @@ body {
     color: #3a3e3f;
 }
 .post__heading:hover {
-    color: #dcdcdc;
+    color: #aeaeae;
 }
 .post__header {
     margin-top: 0;
@@ -167,7 +167,8 @@ body {
 
 /*------------------pager------------------*/
 .pager {
-    margin: 30px 0 0 40px;
+    margin: 30px 0 45px 40px;
+
 }
 .pager__list {
     padding: 0;
@@ -201,10 +202,34 @@ body {
 
 /*------------------footer------------------*/
 .footer {
+    padding: 40px 0 45px;
     background-color: #343434;
 }
 .footer__desc {
     color: #fff;
     font-size: 12px;
     line-height: 20px;
+}
+.footer__copy {
+    font-size: 12px;
+    color: #959595;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.socials {
+
+}
+.socials__list {
+    list-style: none;
+    display: flex;
+}
+.socials__item {
+    margin-left: 13px;
+}
+.socials__item a:hover {
+    opacity: 0.85;
 }
