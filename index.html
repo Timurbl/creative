@@ -147,118 +147,130 @@
                 </ul>
             </div>
         </section>
-        <div class="others">
-            <section class="sidebar">
-                <form method="get">
-                    <fieldset>
-                        <legend>Blog Categories</legend>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="blog-category-1" id="blog-category-1">
-                                <label for="blog-category-1">Blog Category 1 (5)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="blog-category-2" id="blog-category-2">
-                                <label for="blog-category-2">Blog Category 2 (3)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="blog-category-1" id="blog-category-3" checked>
-                                <label for="blog-category-3">Blog Category 3 (8)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="blog-category-1" id="blog-category-4">
-                                <label for="blog-category-4">Blog Category 4 (12)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="blog-category-1" id="blog-category-5">
-                                <label for="blog-category-5">Blog Category 5 (7)</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Archives</legend>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="january" id="january">
-                                <label for="january">January 2012 (23)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="december" id="december">
-                                <label for="december">December 2011 (34)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="november" id="november" checked>
-                                <label for="november">November 2011 (21)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="october" id="october">
-                                <label for="october">October 2011 (11)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="september" id="september">
-                                <label for="september">September 2011 (44)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="august" id="august">
-                                <label for="august">August 2011 (4)</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </form>
-            </section>
-            <section class="recent_posts">
-                <ul class="posts__list">
-                    <li class="posts__item">
-                        <p class="post__item__about">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum</p>
-                        <span class="post__item__date">14th February 2012</span>
-                    </li>
-                    <li class="posts__item">
-                        <p class="post__item__about">Fusce augue arcu, volutpat eu facilisis suscipit, venenatis vehicula diam. </p>
-                        <span class="post__item__date">12th February 2012</span>
-                    </li>
-                    <li class="posts__item">
-                        <p class="post__item__about">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum</p>
-                        <span class="post__item__date">14th February 2012</span>
-                    </li>
-                </ul>
-            </section>
+        <section class="news_right">
+            <div class="others">
+                <section class="sidebar">
+                    <form method="get">
+                        <fieldset>
+                            <legend>Blog Categories</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="blog-category-1" id="blog-category-1">
+                                    <label for="blog-category-1">Blog Category 1 (5)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="blog-category-2" id="blog-category-2">
+                                    <label for="blog-category-2">Blog Category 2 (3)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="blog-category-1" id="blog-category-3" checked>
+                                    <label for="blog-category-3">Blog Category 3 (8)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="blog-category-1" id="blog-category-4">
+                                    <label for="blog-category-4">Blog Category 4 (12)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="blog-category-1" id="blog-category-5">
+                                    <label for="blog-category-5">Blog Category 5 (7)</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Archives</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="january" id="january">
+                                    <label for="january">January 2012 (23)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="december" id="december">
+                                    <label for="december">December 2011 (34)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="november" id="november" checked>
+                                    <label for="november">November 2011 (21)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="october" id="october">
+                                    <label for="october">October 2011 (11)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="september" id="september">
+                                    <label for="september">September 2011 (44)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="august" id="august">
+                                    <label for="august">August 2011 (4)</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="recent_posts">
+                    <h3 class="recent_posts__header">Recent Posts</h3>
+                    <ul class="posts__list">
+                        <li class="posts__item">
+                            <div class="posts__lists--style"><svg>
+                                <polygon points="0,0 0,4 4,2 " fill="#3a3a3a"></polygon>
+                            </svg></div>
+                            <p class="post__item__about"><a href="#">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum</a></p>
+                            <span class="post__item__date">14th February 2012</span>
+                        </li>
+                        <li class="posts__item">
+                            <div class="posts__lists--style"><svg>
+                                <polygon points="0,0 0,4 4,2 " fill="#3a3a3a"></polygon>
+                            </svg></div>
+                            <p class="post__item__about"><a href="#">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum</a></p>
+                            <span class="post__item__date">12th February 2012</span>
+                        </li>
+                        <li class="posts__item">
+                            <div class="posts__lists--style"><svg>
+                                <polygon points="0,0 0,4 4,2" fill="#3a3a3a"></polygon>
+                            </svg></div>
+                            <p class="post__item__about"><a href="#">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum</a></p>
+                            <span class="post__item__date">14th February 2012</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
             <div class="advertising">
                 <img src="images/side-banner.jpg">
             </div>
-        </div>
+        </section>
     </main>
 </div>
-    <footer class="footer">
-        <div class="container">
-            <section class="footer__about">
-                <p class="footer__desc">Quisque turpis lorem, vehicula eget rhoncus vel, ultricies ac mauris.
-                    Morbi lectus velit, tincidunt congue pharetra eu, varius nec libero.
-                    Vivamus justo risus, dignissim ac vestibulum eget, egestas rutrum magna.
-                    Etiam malesuada nisi et nisl volutpat tristique.</p>
-                <p class="footer__copy">
-                    Copyright 2012 Footer here
-                </p>
-            </section>
-            <div class="socials">
-                <ul class="socials__list">
-                    <li class="socials__item">
-                        <a href="#">
-                            <img src="images/post-facebook.png">
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="#">
-                            <img src="images/post-twitter.png">
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="#">
-                            <img src="images/rss.png">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<footer class="footer">
+    <div class="container">
+        <section class="footer__about">
+            <p class="footer__desc">Quisque turpis lorem, vehicula eget rhoncus vel, ultricies ac mauris.
+                Morbi lectus velit, tincidunt congue pharetra eu, varius nec libero.
+                Vivamus justo risus, dignissim ac vestibulum eget, egestas rutrum magna.
+                Etiam malesuada nisi et nisl volutpat tristique.</p>
+            <p class="footer__copy">
+                Copyright 2012 Footer here
+            </p>
+        </section>
+        <div class="socials">
+            <ul class="socials__list">
+                <li class="socials__item">
+                    <a href="#">
+                        <img src="images/post-facebook.png">
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#">
+                        <img src="images/post-twitter.png">
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#">
+                        <img src="images/rss.png">
+                    </a>
+                </li>
+            </ul>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>
