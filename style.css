@@ -203,6 +203,12 @@ body {
     max-width: 330px;
     margin-top: 30px;
 }
+.sidebar__category {
+    list-style: none;
+    margin: 0;
+    padding-left: 25px;
+}
+
 
 
 /*------------------recent posts------------------*/
