@@ -330,3 +330,131 @@ body {
 .socials__item a:hover {
     opacity: 0.85;
 }
+
+@media only screen and (max-width : 1000px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .news {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .news__post {
+        max-width: 1000px;
+    }
+
+    .news_right {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .others {
+        margin-top: 0;
+
+        flex-grow: 1;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .advertising {
+        margin: 20px auto 0 auto;
+    }
+    .sidebar {
+
+    }
+    .sidebar_form {
+        display: flex;
+        justify-content: space-around;
+    }
+    .sidebar_set:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .footer{
+        margin-top: 25px;
+    }
+    .footer .container {
+
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media only screen and (max-width : 705px) {
+    .main_nav .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo {
+        flex-grow: 1;
+    }
+    .logo__name {
+        display: block;
+    }
+    .main_nav__menu {
+        min-width: 0;
+    }
+
+    .post__img > img {
+        width: 96%;
+        margin: 7px 2% 7px 2%;
+        height: auto;
+    }
+
+    .footer .container {
+        flex-wrap: wrap;
+    }
+    .socials {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width : 490px) {
+    .main_nav__menu li:first-child{
+        margin-top: 10px;
+    }
+    .main_nav__menu li:last-child{
+        margin-bottom: 10px;
+    }
+    .menu {
+        min-width: 260px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .advertising img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar_form {
+        padding-top: 15px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .sidebar__header {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width : 340px) {
+    .post__share a img {
+        width: 100%;
+        height: auto;
+    }
+    .post__share {
+        width: 40px;
+        height: 80px;
+    }
+    .post__share a {
+        margin-top: 0;
+    }
+}
